@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================= -->
+    <!-- MESSMATE LIGHT THEME      -->
+    <!-- ========================= -->
+
+    <color name="light_primary">#D97B44</color>
+    <color name="light_secondary">#C9A676</color>
+
+    <color name="light_background">#FAF6EE</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_card">#FFFFFF</color>
+
+    <color name="light_text_primary">#2E2A28</color>
+    <color name="light_text_secondary">#6B6B6B</color>
+
+    <color name="light_accent">#6BAF7A</color>
+    <color name="light_highlight">#E8C07D</color>
+
+    <color name="light_error">#D9534F</color>
+
+    <!-- ========================= -->
+    <!-- MESSMATE DARK THEME       -->
+    <!-- ========================= -->
+
+    <color name="dark_primary">#D4AF37</color>
+    <color name="dark_secondary">#B8860B</color>
+
+    <color name="dark_background">#080808</color>
+    <color name="dark_surface">#141414</color>
+    <color name="dark_card">#1C1C1C</color>
+
+    <color name="dark_text_primary">#F6F3E9</color>
+    <color name="dark_text_secondary">#B0B0B0</color>
+
+    <color name="dark_accent">#3CAF7A</color>
+    <color name="dark_highlight">#FFD97A</color>
+
+    <color name="dark_error">#E05B5B</color>
+
+    <!-- ========================= -->
+    <!-- COMMON                    -->
+    <!-- ========================= -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="bottom_nav_icon_tint">#6B6B6B</color>
+    <color name="bottom_nav_text_tint">#6B6B6B</color>
+
+</resources>

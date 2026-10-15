@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".activities.SplashActivity">
+
+    <!-- Subtle decorative orb - top right -->
+    <View
+        android:id="@+id/orbTop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-65dp"
+        android:layout_marginEnd="-45dp"
+        android:alpha="0.035"
+        android:background="@drawable/bg_splash_orb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subtle decorative orb - bottom left -->
+    <View
+        android:id="@+id/orbBottom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="-80dp"
+        android:layout_marginStart="-60dp"
+        android:alpha="0.025"
+        android:background="@drawable/bg_splash_orb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Decorative accent line -->
+    <View
+        android:id="@+id/topAccent"
+        android:layout_width="64dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- MessMate Logo -->
+    <ImageView
+        android:id="@+id/txtLogoMark"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:contentDescription="MessMate logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/txtAppName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/playfair_display_bold"
+        android:includeFontPadding="false"
+        android:text="MessMate"
+        android:textColor="@color/light_text_primary"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@id/txtTagline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLogoMark" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/txtTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.12"
+        android:text="EAT BETTER. CHOOSE SMARTER."
+        android:textColor="@color/light_text_secondary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAppName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

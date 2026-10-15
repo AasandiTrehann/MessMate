@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="28dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Good morning"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/playfair_display_bold"
+                    android:text="Aasandi"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="27sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_light_card"
+                android:contentDescription="Profile"
+                android:padding="9dp"
+                android:src="@drawable/ic_profile"
+                android:tint="?attr/colorPrimary" />
+
+        </LinearLayout>
+
+        <!-- Intro -->
+        <TextView
+            android:id="@+id/txtIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:lineSpacingExtra="2dp"
+            android:text="Here's what's waiting for you today."
+            android:textColor="?android:textColorSecondary"
+            android:textSize="13sp" />
+
+        <!-- Today's Special -->
+        <LinearLayout
+            android:id="@+id/todaySpecialCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_light_card"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Card Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.08"
+                    android:text="TODAY'S SPECIAL"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/txtMatchScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_light_outline"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="92% MATCH"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <!-- Meal Name -->
+            <TextView
+                android:id="@+id/txtSpecialMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Paneer Butter Masala"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="25sp" />
+
+            <!-- Meal Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="4.6 rating"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="?attr/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtMealCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Main Course"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Recommendation Explanation -->
+            <TextView
+                android:id="@+id/txtMatchReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="2dp"
+                android:text="Recommended because you enjoy creamy vegetarian dishes."
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp" />
+
+            <!-- View Meal -->
+            <TextView
+                android:id="@+id/txtViewMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="View meal  →"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- Today's Menu Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Today's Menu"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtViewFullMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="View all"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <!-- Meal Time Cards -->
+        <HorizontalScrollView
+            android:id="@+id/menuHorizontalScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Breakfast -->
+                <LinearLayout
+                    android:id="@+id/cardBreakfast"
+                    android:layout_width="145dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_light_card"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="BREAKFAST"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/txtBreakfast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/playfair_display_bold"
+                        android:text="8:00 AM"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Morning meal"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <!-- Lunch -->
+                <LinearLayout
+                    android:id="@+id/cardLunch"
+                    android:layout_width="145dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/bg_light_card"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="LUNCH"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/txtLunch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/playfair_display_bold"
+                        android:text="1:00 PM"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Afternoon meal"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <!-- Dinner -->
+                <LinearLayout
+                    android:id="@+id/cardDinner"
+                    android:layout_width="145dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/bg_light_card"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="DINNER"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/txtDinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/playfair_display_bold"
+                        android:text="8:00 PM"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Evening meal"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Recommendation Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Recommended for You"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtSeeAllRecommendations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="See all"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <!-- Recommendation Card -->
+        <LinearLayout
+            android:id="@+id/recommendationCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_light_card"
+            android:elevation="1dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtRecommendationMeal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/playfair_display_bold"
+                    android:text="Dal Makhani"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtRecommendationScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="88%"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtRecommendationReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="2dp"
+                android:text="Matches your vegetarian preference and recent meal ratings."
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

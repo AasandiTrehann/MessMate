@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardMenuItem"
+    android:layout_width="145dp"
+    android:layout_height="110dp"
+    android:layout_marginEnd="12dp"
+    android:background="@drawable/bg_light_card"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtMenuCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.06"
+        android:text="BREAKFAST"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/txtMenuTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/playfair_display_bold"
+        android:text="8:00 AM"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtMenuDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Morning meal"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="10sp" />
+
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="30dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/txtProfileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Profile"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="30sp" />
+
+        <!-- Profile Card -->
+        <LinearLayout
+            android:id="@+id/profileHeaderCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_light_card"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/bg_logo"
+                android:contentDescription="Profile"
+                android:padding="14dp"
+                android:src="@drawable/ic_profile"
+                android:tint="?attr/colorOnPrimary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display_bold"
+                    android:text="Aasandi"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/txtStudentLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Student"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Account -->
+        <TextView
+            android:id="@+id/txtAccountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Account"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/accountCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_light_card"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Email"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="aasandi@example.com"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:alpha="0.15"
+                android:background="?android:textColorSecondary" />
+
+            <!-- Hostel -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Hostel"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtHostel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Hostel A"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:alpha="0.15"
+                android:background="?android:textColorSecondary" />
+
+            <!-- Room -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Room"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="204"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <!-- Preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPreferencesTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Preferences"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/txtEditPreferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Edit"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preferencesCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_light_card"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <!-- Food Type -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Food type"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtFoodType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Vegetarian"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:alpha="0.15"
+                android:background="?android:textColorSecondary" />
+
+            <!-- Spice Level -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Spice level"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtSpiceLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Medium"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:alpha="0.15"
+                android:background="?android:textColorSecondary" />
+
+            <!-- Favourite Foods -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Favourite foods"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtFavoriteFoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Paneer, Dal"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Edit Preferences Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Edit Preferences"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="13sp"
+            android:background="@drawable/bg_light_outline"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="12dp"
+            app:strokeWidth="0dp" />
+
+        <!-- Sign Out -->
+        <TextView
+            android:id="@+id/txtSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Sign Out"
+            android:textColor="?attr/colorError"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

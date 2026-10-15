@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mealDetailScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".activities.MealDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <!-- Meal Image Area -->
+        <FrameLayout
+            android:id="@+id/mealImageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="?android:windowBackground">
+
+            <ImageView
+                android:id="@+id/imgMeal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Meal image"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/txtMealImagePlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Paneer Butter Masala"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="24sp" />
+
+        </FrameLayout>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="22dp"
+            android:paddingTop="24dp"
+            android:paddingEnd="22dp">
+
+            <!-- Meal Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtMealName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/playfair_display_bold"
+                        android:text="Paneer Butter Masala"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="27sp" />
+
+                    <TextView
+                        android:id="@+id/txtMealCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Main Course"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <!-- Match Score -->
+                <LinearLayout
+                    android:id="@+id/mealMatchBadge"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/bg_light_outline"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtMealMatch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/playfair_display_bold"
+                        android:text="92%"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="MATCH"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="7sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Rating -->
+            <LinearLayout
+                android:id="@+id/mealRatingRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMealRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="4.6 rating"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="?attr/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtRatingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="128 ratings"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Why Recommended -->
+            <TextView
+                android:id="@+id/txtWhyRecommendedTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Why it's recommended"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="21sp" />
+
+            <!-- Recommendation Tags -->
+            <LinearLayout
+                android:id="@+id/mealRecommendationTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tagVegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_light_outline"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="Vegetarian"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tagCreamy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/bg_light_outline"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="Creamy"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tagHighlyRated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/bg_light_outline"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="Highly Rated"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtRecommendationReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="2dp"
+                android:text="This meal matches your food preferences and your positive ratings of similar meals."
+                android:textColor="?android:textColorSecondary"
+                android:textSize="11sp" />
+
+            <!-- About -->
+            <TextView
+                android:id="@+id/txtAboutMealTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="About this meal"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/txtMealDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="3dp"
+                android:text="A rich and creamy paneer preparation made with aromatic spices and a smooth tomato-based gravy. Served as part of today's lunch menu."
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp" />
+
+            <!-- Meal Availability -->
+            <LinearLayout
+                android:id="@+id/mealAvailabilityCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_light_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Available today"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/txtServingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="1:00 PM — 2:30 PM"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Available"
+                    android:textColor="?attr/colorAccent"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <!-- Rate Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRateMeal"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Rate this meal"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/bg_light_primary_button"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="12dp"
+                app:strokeWidth="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

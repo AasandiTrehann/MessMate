@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manageMenuScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".fragments.ManageMenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="32dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:id="@+id/txtManageMenuTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Manage Menu"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtManageMenuSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Assign meals to today's menu."
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12sp" />
+
+        <!-- Date -->
+
+        <TextView
+            android:id="@+id/txtMenuDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_light_outline"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingStart="12dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="7dp"
+            android:text="MONDAY, 28 SEPTEMBER"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="10sp" />
+
+        <!-- Breakfast -->
+
+        <TextView
+            android:id="@+id/txtManageBreakfastTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Breakfast"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/manageBreakfastCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/bg_light_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtBreakfastSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Aloo Paratha"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtBreakfastServing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="8:00 AM — 9:30 AM"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="10sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectBreakfast"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_light_outline"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Change Meal"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="12dp"
+                app:strokeWidth="0dp" />
+
+        </LinearLayout>
+
+        <!-- Lunch -->
+
+        <TextView
+            android:id="@+id/txtManageLunchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Lunch"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/manageLunchCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/bg_light_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtLunchSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Paneer Butter Masala"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtLunchServing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="1:00 PM — 2:30 PM"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="10sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectLunch"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_light_outline"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Change Meal"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="12dp"
+                app:strokeWidth="0dp" />
+
+        </LinearLayout>
+
+        <!-- Evening Snacks -->
+
+        <TextView
+            android:id="@+id/txtManageSnacksTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Evening Snacks"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/manageSnacksCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/bg_light_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtSnacksSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Samosa &amp; Tea"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtSnacksServing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="5:00 PM — 6:00 PM"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="10sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectSnacks"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_light_outline"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Change Meal"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="12dp"
+                app:strokeWidth="0dp" />
+
+        </LinearLayout>
+
+        <!-- Dinner -->
+
+        <TextView
+            android:id="@+id/txtManageDinnerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Dinner"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/manageDinnerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/bg_light_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtDinnerSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Dal Makhani"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtDinnerServing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="8:00 PM — 9:30 PM"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="10sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectDinner"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_light_outline"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Change Meal"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="12dp"
+                app:strokeWidth="0dp" />
+
+        </LinearLayout>
+
+        <!-- Save Menu -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveMenu"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Save Today's Menu"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:backgroundTint="?attr/colorPrimary"
+            app:cornerRadius="12dp"
+            app:strokeWidth="0dp" />
+
+        <TextView
+            android:id="@+id/txtManageMenuNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="You can update the menu whenever needed."
+            android:textColor="?android:textColorSecondary"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+</ScrollView>

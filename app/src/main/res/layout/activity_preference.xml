@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/preferenceScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".activities.PreferenceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="80dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:id="@+id/txtPreferenceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Your Preferences"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtPreferenceSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:lineSpacingExtra="2dp"
+            android:text="Tell us what you like so we can personalize your meals."
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12sp" />
+
+        <!-- Food Type -->
+
+        <TextView
+            android:id="@+id/txtFoodTypeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Food Type"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <RadioGroup
+            android:id="@+id/radioFoodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioVegetarian"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Vegetarian"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="12sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/radioEggetarian"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Eggetarian"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="12sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/radioNonVegetarian"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Non-Vegetarian"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="12sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+        </RadioGroup>
+
+        <!-- Spice Level -->
+
+        <TextView
+            android:id="@+id/txtSpiceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Spice Level"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <RadioGroup
+            android:id="@+id/radioSpiceLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMild"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Mild"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="11sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Medium"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="11sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/radioSpicy"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Spicy"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="11sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+        </RadioGroup>
+
+        <!-- Favourite Foods -->
+
+        <TextView
+            android:id="@+id/txtFavouriteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Favourite Foods"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtFavouriteSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Select foods you usually enjoy."
+            android:textColor="?android:textColorSecondary"
+            android:textSize="11sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/favouriteFoodInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Favourite foods"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="?attr/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtFavouriteFoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtFavouriteExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Example: Paneer, Dal, Biryani"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="9sp" />
+
+        <!-- Disliked Foods -->
+
+        <TextView
+            android:id="@+id/txtDislikedTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Foods to Avoid"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtDislikedSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Tell us about foods you prefer not to receive."
+            android:textColor="?android:textColorSecondary"
+            android:textSize="11sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dislikedFoodInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Foods to avoid"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="?attr/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDislikedFoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtDislikedExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Example: Mushroom, Very spicy food"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="9sp" />
+
+        <!-- Cuisine Preferences -->
+
+        <TextView
+            android:id="@+id/txtCuisineTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/playfair_display_bold"
+            android:text="Cuisine Preferences"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/cuisineOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkNorthIndian"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="North Indian"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="11sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+            <CheckBox
+                android:id="@+id/checkSouthIndian"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="South Indian"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="11sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+            <CheckBox
+                android:id="@+id/checkChinese"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Chinese"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="11sp"
+                android:buttonTint="?attr/colorPrimary" />
+
+        </LinearLayout>
+
+        <!-- Save Button -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSavePreferences"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Save Preferences"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:background="@drawable/bg_light_primary_button"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="12dp"
+            app:strokeWidth="0dp" />
+
+        <TextView
+            android:id="@+id/txtPreferenceNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="You can change these preferences anytime."
+            android:textColor="?android:textColorSecondary"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+</ScrollView>
